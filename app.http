@@ -1,0 +1,81 @@
+POST http://localhost:3000/signup
+Content-Type: application/json
+
+{
+    "name":"madhu",
+    "email":"madhu@gmail.com",
+    "password":"madhu12"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"madhu@gmail.com",
+    "password":"madhu12"
+}
+
+###
+POST http://localhost:3000/update-password
+Content-Type: application/json
+
+{
+    "email":"madhu@gmail.com",
+    "oldPassword":"madhu12",
+    "newPassword":"madhu123"
+}
+
+###
+POST http://localhost:3000/update-password
+Content-Type: application/json
+
+{
+    "email":"madhu@gmail.com",
+    "oldPassword":"madhu123",
+    "newPassword":"madhu12"
+}
+
+
+
+###
+POST http://localhost:3000/tasks
+authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFmNzA1Zi0yNjYzLTQ0ODctYjRlMy01MmM4NTY1ZjhhMWQiLCJpYXQiOjE3MzEwMjY4OTUsImV4cCI6MTczMTAzMDQ5NX0.UJZcca4b9SURUPOCPmLs1m9KkJFwnvXzk7eqH_8wbyA
+Content-Type: application/json
+
+{
+    "title":"Develop static page",
+    "description":"Do within a day",
+    "status":"pending"
+}
+
+###
+POST http://localhost:3000/tasks
+authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFmNzA1Zi0yNjYzLTQ0ODctYjRlMy01MmM4NTY1ZjhhMWQiLCJpYXQiOjE3MzEwMjY4OTUsImV4cCI6MTczMTAzMDQ5NX0.UJZcca4b9SURUPOCPmLs1m9KkJFwnvXzk7eqH_8wbyA
+Content-Type: application/json
+
+{
+    "title":"Develop Responsive page",
+    "description":"Do within a day",
+    "status":"pending"
+}
+
+###
+GET http://localhost:3000/tasks
+authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFmNzA1Zi0yNjYzLTQ0ODctYjRlMy01MmM4NTY1ZjhhMWQiLCJpYXQiOjE3MzEwMjY4OTUsImV4cCI6MTczMTAzMDQ5NX0.UJZcca4b9SURUPOCPmLs1m9KkJFwnvXzk7eqH_8wbyA
+
+###
+PUT http://localhost:3000/tasks/4a729475-2365-44dd-afd8-9aef96444307
+authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFmNzA1Zi0yNjYzLTQ0ODctYjRlMy01MmM4NTY1ZjhhMWQiLCJpYXQiOjE3MzEwMjY4OTUsImV4cCI6MTczMTAzMDQ5NX0.UJZcca4b9SURUPOCPmLs1m9KkJFwnvXzk7eqH_8wbyA
+Content-Type: application/json
+
+{
+    "title": "Build a static pagee",
+    "description": "Take two days",
+    "status": "pending"
+}
+
+###
+DELETE http://localhost:3000/tasks/de77f204-9a15-43da-b88d-8091bbee0487
+authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFmNzA1Zi0yNjYzLTQ0ODctYjRlMy01MmM4NTY1ZjhhMWQiLCJpYXQiOjE3MzEwMjY4OTUsImV4cCI6MTczMTAzMDQ5NX0.UJZcca4b9SURUPOCPmLs1m9KkJFwnvXzk7eqH_8wbyA
+
